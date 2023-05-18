@@ -8,3 +8,7 @@ class TodoForm(forms.ModelForm):
             'title',
             'completed',
         ]
+        widgets = {
+            'title':        forms.TextInput(attrs={'class': 'form-input'}),
+            'completed':    forms.CheckboxInput(attrs={'class': 'form-input'}),
+        }

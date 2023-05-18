@@ -1,6 +1,12 @@
-<h2>Delete todo</h2>
-<p>Are you sure you want to delete "{{ todo.title }}"?</p>
-<form method="post">
-  {% csrf_token %}
-  <button type="submit">Yes, delete</button>
-</form>
+{% extends 'base.html' %}
+
+{% block contents %}
+
+    <h2 class="delete-title">Delete todo</h2>
+    <p class="delete-message">Are you sure you want to delete "{{ todo.title }}"?</p>
+    <form method="post" class="delete-form">
+        {% csrf_token %}
+        <button type="submit" class="delete-button-d">Yes, delete</button>
+    </form>
+
+{% endblock contents %}

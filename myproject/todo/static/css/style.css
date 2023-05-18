@@ -1,0 +1,137 @@
+/* ---------- for index.html -------------------------------------------------- */
+
+body.todo-list {
+    background: white url('../img/vagetables_in_the_fridge.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    color: green;
+}
+
+.add-button {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.todo-item {
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.todo-item.completed .todo-title {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.todo-title {
+    color: green;
+}
+
+.todo-item .todo-title {
+    color: green;
+    transition: font-size 0.5s ease;
+}
+
+.todo-item:hover .todo-title {
+    font-size: 2em;
+}
+
+.edit-button, .delete-button {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.edit-button {
+    background-color: green;
+}
+
+/* ---------- for add.html -------------------------------------------------- */
+
+.form-title {
+    color: green;
+    transition: font-size 0.5s ease;
+    text-align: center;  /* 追加 */
+}
+
+.form-title:hover {
+    font-size: 1.5em;
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-input {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid green;
+    transition: box-shadow 0.5s ease;
+}
+
+.form-input:focus {
+    box-shadow: 0 0 10px green;
+}
+
+.submit-button {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+
+.submit-button:hover {
+    background-color: red;
+}
+
+/* ---------- for delete-confirmation.html -------------------------------------------------- */
+.delete-title {
+    color: red;
+    text-align: center;
+    transition: font-size 0.5s ease;
+}
+
+.delete-title:hover {
+    font-size: 1.5em;
+}
+
+.delete-message {
+    color: orange;
+    text-align: center;
+}
+
+.delete-form {
+    display: flex;
+    justify-content: center;
+}
+
+.delete-button-d {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+
+.delete-button-d:hover {
+    background-color: green;
+}
